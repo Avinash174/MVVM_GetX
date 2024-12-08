@@ -1,6 +1,6 @@
-# mvvm_getx
+# mvvm_getx_project
 
-A new Flutter project.
+A New Flutter Project.
 
 ## Getting Started
 
