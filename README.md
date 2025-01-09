@@ -1,6 +1,6 @@
-# mvvm_getx_project
+# MVVM GetX 
 
-A New Flutter Project.
+A New Flutter Project Using GetX State Management & Clean Architecture.
 
 ## Getting Started
 
