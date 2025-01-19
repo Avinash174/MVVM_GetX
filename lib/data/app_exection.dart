@@ -16,3 +16,7 @@ class InternetException extends AppExceptions {
 class RequestTimeOut extends AppExceptions {
   RequestTimeOut([String? message]) : super(message, 'Internal Serval Error');
 }
+
+class InvalidUrlExeption extends AppExceptions {
+  InvalidUrlExeption([String? message]) : super(message, 'Invalid Url');
+}

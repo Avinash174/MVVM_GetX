@@ -12,11 +12,11 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          throw InternetException('No Internet Connection');
-        },
-      ),
-    );
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: () {
+        //     throw InternetException('No Internet Connection');
+        //   },
+        // ),
+        );
   }
 }
