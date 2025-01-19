@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:mvvm_getx/getx_localization/language.dart';
 import 'package:mvvm_getx/res/routes/routes.dart';
 import 'package:mvvm_getx/view/splashscreen.dart';
 
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
+        translations: Languages(),
+        locale: const Locale('en', 'US'),
+        fallbackLocale: const Locale('en', 'US'),
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
