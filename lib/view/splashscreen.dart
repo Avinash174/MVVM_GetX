@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/get_core.dart';
+import 'package:get/route_manager.dart';
 import 'package:get/utils.dart';
 import 'package:mvvm_getx/data/app_exection.dart';
+import 'package:mvvm_getx/res/assets/icons/icons.dart';
+import 'package:mvvm_getx/res/assets/images/images.dart';
 import 'package:mvvm_getx/res/color/app_color.dart';
 import 'package:mvvm_getx/utils/utils.dart';
 
@@ -24,6 +28,21 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
         ),
       ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Image(
+              image: const AssetImage(
+                ImageAssets.firstImage,
+              ),
+              height: Get.height * .2,
+              width: Get.width * .5,
+              fit: BoxFit.cover,
+            ),
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppColor.pinkColor,
         onPressed: () {
@@ -31,8 +50,12 @@ class _SplashScreenState extends State<SplashScreen> {
             'message',
           );
         },
-        child: const Icon(
-          Icons.play_arrow_rounded,
+        child: Image(
+          image: const AssetImage(
+            IconAssets.playIcon,
+          ),
+          height: Get.height * .02,
+          width: Get.width * .2,
         ),
       ),
     );
