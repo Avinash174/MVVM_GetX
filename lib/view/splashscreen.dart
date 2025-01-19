@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
       appBar: AppBar(
         backgroundColor: AppColor.pinkColor,
         title: Text(
-          'email_hint'.tr,
+          'Home Screen'.tr,
           style: const TextStyle(
             color: AppColor.whiteColor,
           ),
