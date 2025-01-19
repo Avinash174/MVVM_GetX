@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_core/get_core.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/utils.dart';
 import 'package:mvvm_getx/res/assets/icons/icons.dart';
