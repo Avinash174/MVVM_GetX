@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
-import 'package:get/utils.dart';
+import 'package:get/get.dart';
+import 'package:mvvm_getx/components/internet_exeption.dart';
 import 'package:mvvm_getx/res/assets/icons/icons.dart';
 import 'package:mvvm_getx/res/assets/images/images.dart';
 import 'package:mvvm_getx/res/color/app_color.dart';
@@ -26,36 +26,37 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
         ),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: Image(
-              image: const AssetImage(
-                ImageAssets.firstImage,
-              ),
-              height: Get.height * .2,
-              width: Get.width * .5,
-              fit: BoxFit.cover,
-            ),
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: AppColor.pinkColor,
-        onPressed: () {
-          Utils.toastCenterMessage(
-            'message',
-          );
-        },
-        child: Image(
-          image: const AssetImage(
-            IconAssets.playIcon,
-          ),
-          height: Get.height * .02,
-          width: Get.width * .2,
-        ),
-      ),
+      body: InternetExeption(),
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.center,
+      //   children: [
+      //     Center(
+      //       child: Image(
+      //         image: const AssetImage(
+      //           ImageAssets.firstImage,
+      //         ),
+      //         height: Get.height * .2,
+      //         width: Get.width * .5,
+      //         fit: BoxFit.cover,
+      //       ),
+      //     ),
+      //   ],
+      // ),
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: AppColor.pinkColor,
+      //   onPressed: () {
+      //     Utils.toastCenterMessage(
+      //       'message',
+      //     );
+      //   },
+      //   child: Image(
+      //     image: const AssetImage(
+      //       IconAssets.playIcon,
+      //     ),
+      //     height: Get.height * .02,
+      //     width: Get.width * .2,
+      //   ),
+      // ),
     );
   }
 }
