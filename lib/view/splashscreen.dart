@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mvvm_getx/components/general.exection.dart';
 import 'package:mvvm_getx/components/internet_exeption.dart';
 import 'package:mvvm_getx/res/assets/icons/icons.dart';
 import 'package:mvvm_getx/res/assets/images/images.dart';
@@ -26,7 +27,9 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
         ),
       ),
-      body: InternetExeption(),
+      body: GenaralExeption(
+        onPress: () {},
+      ),
       // body: Column(
       //   mainAxisAlignment: MainAxisAlignment.center,
       //   children: [
